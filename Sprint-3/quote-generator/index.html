@@ -3,13 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title here</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Quote generator app</title>
     <script defer src="quotes.js"></script>
   </head>
   <body>
-    <h1>hello there</h1>
-    <p id="quote"></p>
-    <p id="author"></p>
-    <button type="button" id="new-quote">New quote</button>
+    <main id="quote-box">
+      <div id="quote-content">
+        <span id="quote-mark">“</span>
+        <p id="quote"></p>
+      </div>
+  
+      <p id="author"></p>
+  
+      <div id="button-container">
+        <button type="button" id="new-quote">New quote</button>
+      </div>
+    </main>
   </body>
 </html>
