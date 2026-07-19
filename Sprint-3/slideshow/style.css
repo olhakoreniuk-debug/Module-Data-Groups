@@ -1,1 +1,61 @@
-/** Write your CSS in here **/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font-family: Arial, sans-serif;
+  background: #f4f0fa;
+  color: #28163d;
+}
+
+.carousel {
+  width: min(90vw, 720px);
+  padding: 2rem;
+  text-align: center;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 0.75rem 2rem rgb(40 22 61 / 15%);
+}
+
+#carousel-img {
+  display: block;
+  width: 100%;
+  height: min(55vh, 440px);
+  margin: 1.5rem 0;
+  object-fit: contain;
+  border-radius: 0.75rem;
+  background: #eee8f6;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  border: 2px solid #7040a0;
+  border-radius: 999px;
+  background: white;
+  color: #432060;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled),
+button:focus-visible {
+  background: #7040a0;
+  color: white;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
